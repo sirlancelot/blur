@@ -17,6 +17,8 @@ div.blur-block {
 	filter: blur(var(--obsidian-blur-filter)) !important;
 	-webkit-filter: blur(var(--obsidian-blur-filter)) !important;
 }
+.obsidian-blur-hover div.blur-block:active,
+.obsidian-blur-hover div.blur-block:focus,
 .obsidian-blur-hover div.blur-block:hover {
 	filter: blur(0px) !important;
 	-webkit-filter: blur(0px) !important;
@@ -26,6 +28,8 @@ code.blur-inline {
 	-webkit-filter: blur(var(--obsidian-blur-filter)) !important;
   display:inline-block !important;
 }
+.obsidian-blur-hover code.blur-inline:active,
+.obsidian-blur-hover code.blur-inline:focus,
 .obsidian-blur-hover code.blur-inline:hover {
   filter: blur(0) !important;
   -webkit-filter: blur(0px) !important;
@@ -37,6 +41,8 @@ code.blur-bone {
   line-height: var(--obsidian-blur-bone-line-height) !important;
   display:inline-block !important;
 }
+.obsidian-blur-hover code.blur-bone:active,
+.obsidian-blur-hover code.blur-bone:focus,
 .obsidian-blur-hover code.blur-bone:hover {
   background-color: transparent !important;
 }
@@ -47,6 +53,8 @@ code.blur-brick {
   line-height: var(--obsidian-blur-brick-line-height) !important;
   display:inline-block !important;
 }
+.obsidian-blur-hover code.blur-brick:active,
+.obsidian-blur-hover code.blur-brick:focus,
 .obsidian-blur-hover code.blur-brick:hover {
   background-color: transparent !important;
 }

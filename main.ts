@@ -66,6 +66,7 @@ export function buildPostProcessor(): MarkdownPostProcessor {
         let part = text.substring(1);
         let content = part.substring(part.length-1,1);
         code.addClass('blur-brick');
+        code.setAttribute('tabindex', '0');
         //redact w/ char '█'  &block; █
         code.innerText=content.replace(/[^\s]/g, '█');
       }
@@ -73,12 +74,14 @@ export function buildPostProcessor(): MarkdownPostProcessor {
         let part = text.substring(1);
         let content = part.substring(part.length-1,1);
         code.addClass('blur-bone');
+        code.setAttribute('tabindex', '0');
         code.innerText=content;
       }
       else if (text.startsWith('~{') && text.endsWith('}')) {
         let part = text.substring(1);
         let content = part.substring(part.length-1,1);
         code.addClass('blur-inline');
+        code.setAttribute('tabindex', '0');
         code.innerText=content;
       }
     })
